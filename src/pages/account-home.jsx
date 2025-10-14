@@ -13,11 +13,7 @@ export default function AccountHome(){
     </ul>
     <ul className="menu">
       <li className="menu">
-        <button>
-          <a className="menu" href="/friends-content">
-            Friend Content
-          </a>
-        </button>
+        <button onClick={()=>location.assign("/friends-content")}>Friend Content</button>
       </li>
     </ul>
   </main>
