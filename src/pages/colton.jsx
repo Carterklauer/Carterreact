@@ -6,7 +6,7 @@ export default function Colton(){
   <main>
     <p className="colton">
        My best friend Colton Engel is one of the
-      most kindest person that I met. Colton is a proud Nissan trucks owner.
+      most kindest person that I met. Colton is a proud Nissan Titan owner.
     </p>
     
     <p className="colton">Colton likes to play Baseball. Here are some pictures of him playing Baseball.</p>
@@ -20,7 +20,7 @@ export default function Colton(){
     
     <p className="colton">His pitching speed is 84 m.p.h, and he is 6ft and weighs 225lbs.</p>
     <p className="colton">
-      &nbsp; His trucks are a 2005 Nissan Titan and a 2021 Nissan Titan. Colton
+      &nbsp; His truck is a 2021 Nissan Titan. Colton
       likes his trucks lifted and puts very cool stuff like a lift kit, very
       aggressive mud tires and other cool stuff.
     </p>
