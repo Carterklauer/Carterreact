@@ -25,13 +25,6 @@ export default function Colton(){
       aggressive mud tires and other cool stuff.
     </p>
     <button type="button" onClick={()=>location.assign('/colton/nissan-trucks')}>Colton's Cool Nissan Trucks</button>
-    <p className="colton">
-      &nbsp; Colton's 2005 Nissan Titan has a 6 in. lift, 35 x 12.5 12 ply very
-      cool aggressive mud tires (Thunderer Trac Grip M/T), a sunroof, and tinted
-      windows in the back, Moto Metal Wheels.
-    </p>
-    <img src="https://cdn.glitch.global/1760db9d-c13a-4b0a-a542-608419c30c2b/Colton's 2005 Nissan Titan 2.jpg?v=1600402764323" border={0} height={360} width={480} alt="Colton's 2005 Nissan Titan 1."/>
-    <img src="https://cdn.glitch.global/1760db9d-c13a-4b0a-a542-608419c30c2b/Colton's%202005%20Nissan%20Titan%205.jpg?v=1696023282728" height={378} width={504} alt="Colton's 2005 Nissan Titan 2."/>
   </main>
 </>
 
