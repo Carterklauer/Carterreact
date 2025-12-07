@@ -1,4 +1,5 @@
 import * as React from "react"
+import Popup from "component/popup"
 export default function Colton(){
   return(<>
   <img id="backgroundimage" src="https://cdn.glitch.global/1760db9d-c13a-4b0a-a542-608419c30c2b/Colton's%202005%20Nissan%20Titan%205.jpg?v=1696023282728" alt="Colton's very cool looking 2005 Nissan Titan"/>
