@@ -17,7 +17,8 @@ export default function Colton(){
     </p>
     
     <p className="colton">Colton likes to play Baseball. Here are some pictures of him playing Baseball.</p>
-    <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F65424889_457293585059544_8613261504277381120_n.jpg?v=1602466475393" border={0} alt="Colton Playing Baseball 1."/>
+    <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F65424889_457293585059544_8613261504277381120_n.jpg?v=1602466475393" border={0} alt="Colton Playing Baseball 1." onClick={()=>OpenPopup()}/>
+    <Popup visible={PopupState} onClose={false}></Popup>
     <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F65756298_444546549731261_1786822092965019648_n.jpg?v=1602466478548" border={0} alt="Colton playing Baseball 2."/>
     <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F65977661_649244112259034_4839865523351060480_n.jpg?v=1602466482409" border={0} alt="Colton playing baseball 3."/>
     <img className="landscape" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F71003865_533970900687649_3178975934543822848_n.jpg?v=1602466494940" border={0} alt="Colton Playing baseball 4."/>
