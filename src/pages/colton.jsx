@@ -2,13 +2,25 @@ import * as React from "react"
 import Popup from "../components/popup"
 export default function Colton(){
   const[PopupState, SetPopupState]=React.useState(false);
-  function OpenPopup(){
+  const [ID, SetID]=React.useState("");
+  function CheckID(PID){
+    if(ID==PID){
+      return PopupState;
+    }else{
+      return false;
+    }
+        
+  }
+  function OpenPopup(id){
+    SetID(id);
     SetPopupState(true);
   }
   function ClosePopup(){
     SetPopupState(false);
+    SetID("");
+    //Remember when adding a Popup Id's need to be kept unique in CheckID.
   return(<>
-  <img id="backgroundimage" src="https://cdn.glitch.global/1760db9d-c13a-4b0a-a542-608419c30c2b/Colton's%202005%20Nissan%20Titan%205.jpg?v=1696023282728" alt="Colton's very cool looking 2005 Nissan Titan"/>
+  <img id="backgroundimage" src="/Coltons_2005_Nissan_Titan_4"/ alt="Colton's cool looking 2005 Nissan Titan.">
   <header><h1>Colton Engel</h1></header>
   <main>
     <p className="colton">
@@ -17,9 +29,11 @@ export default function Colton(){
     </p>
     
     <p className="colton">Colton likes to play Baseball. Here are some pictures of him playing Baseball.</p>
-    <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F65424889_457293585059544_8613261504277381120_n.jpg?v=1602466475393" border={0} alt="Colton Playing Baseball 1." onClick={()=>OpenPopup()}/>
-    <Popup visible={PopupState} onClose={false}></Popup>
-    <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F65756298_444546549731261_1786822092965019648_n.jpg?v=1602466478548" border={0} alt="Colton playing Baseball 2."/>
+    <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F65424889_457293585059544_8613261504277381120_n.jpg?v=1602466475393" border={0} alt="Colton Playing Baseball 1." onClick={()=>OpenPopup("pic1")}/>
+    <Popup visible={CheckID("pic1")} onClose={false} style={{width:500,height:800}}id="pic1">
+      <div className="close-button" onClick={()=>ClosePopup()}>&times;</div>
+    </Popup>
+    <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F65756298_444546549731261_1786822092965019648_n.jpg?v=1602466478548" border={0} alt="Colton playing Baseball 2." onClick={()=>OpenPopup("pic2")}/>
     <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F65977661_649244112259034_4839865523351060480_n.jpg?v=1602466482409" border={0} alt="Colton playing baseball 3."/>
     <img className="landscape" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F71003865_533970900687649_3178975934543822848_n.jpg?v=1602466494940" border={0} alt="Colton Playing baseball 4."/>
     <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F71237568_2540484516038687_3505501347208232960_n.jpg?v=1602466502219" border={0} alt="Colton Playing baseball 5."/>
