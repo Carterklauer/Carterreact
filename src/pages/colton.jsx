@@ -30,7 +30,7 @@ export default function Colton(){
     </p>
     
     <p className="colton">Colton likes to play Baseball. Here are some pictures of him playing Baseball.</p>
-    <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F65424889_457293585059544_8613261504277381120_n.jpg?v=1602466475393" border={0} alt="Colton Playing Baseball 1." onClick={()=>OpenPopup("pic1")}/>
+    <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F65424889_457293585059544_8613261504277381120_n.jpg?v=1602466475393" border={0} alt="Colton Playing Baseball 1." onClick={OpenPopup("pic1")}/>
     <Popup visible={CheckID("pic1")} onClose={false} style={{width:500,height:800}}id="pic1">
       <div className="close-button" onClick={()=>ClosePopup()}>&times;</div>
     </Popup>
