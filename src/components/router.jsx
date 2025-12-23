@@ -14,7 +14,6 @@ import Colton from "../pages/colton"
 export default () => (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/about" component={About} />
-        <Route path="/colton" component={Colton} />
+      <Route path="/colton" component={Colton} />
     </Switch>
 );
