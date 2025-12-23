@@ -1,7 +1,6 @@
 import * as React from "react";
-import { Switch, Route, Router } from "wouter";
-import Home from "../pages/home";
-import About from "../pages/about";
+import { Switch, Route, Router } from "wouter"
+import Home from "../pages/home"
 import Colton from "../pages/colton"
 
 /**
