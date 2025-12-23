@@ -19,6 +19,7 @@ export default function Colton(){
     SetPopupState(false);
     SetID("");
     //Remember when adding a Popup Id's need to be kept unique in CheckID.
+  }
   return(<>
   <img id="backgroundimage" src="/Coltons_2005_Nissan_Titan_4" alt="Colton's cool looking 2005 Nissan Titan."/>
   <header><h1>Colton Engel</h1></header>
