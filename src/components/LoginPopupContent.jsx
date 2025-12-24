@@ -8,7 +8,26 @@ export default function LoginContent(){
     const AccountListTemp=Account.split(" ");
     return AccountListTemp;
   }
-  const AccountList=React.useState(SetAccountList);
+  function GetCookie(){
+    const name="RecentLogins=";
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const ca=decodedCookie.split(";");
+    let c;
+    //let s
+    useEffect(()=>{
+      for(let i=0;i<ca.length;i++){
+        c=ca[i];
+        if(c[0]==" "){
+            c=c.substring(1);
+        }
+        if(c.indexOf(name)==0){
+            return c.substring(name.length,c.length);
+        }
+      }
+    }
+    return "";
+  }
+  const [AccountList, SetAccountList]=React.useState([]);
   function SetAccountSection(){
     useEffect(()=>{
       for(let i=0;i<AccountList.length;i++){
