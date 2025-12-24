@@ -12,9 +12,8 @@ export default function LoginContent(){
     const name="RecentLogins=";
     const decodedCookie = decodeURIComponent(document.cookie);
     const ca=decodedCookie.split(";");
-    let c;
-    //let s
     useEffect(()=>{
+      let c;
       for(let i=0;i<ca.length;i++){
         c=ca[i];
         if(c[0]==" "){
