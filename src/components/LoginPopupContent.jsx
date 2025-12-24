@@ -23,7 +23,7 @@ export default function LoginContent(){
             return c.substring(name.length,c.length);
         }
       }
-    }
+    })
     return "";
   }
   const [AccountList, SetAccountList]=React.useState([]);
