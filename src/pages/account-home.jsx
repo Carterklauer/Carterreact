@@ -1,5 +1,10 @@
 import * as React from "react"
+import {useEffect} from "react"
 export default function AccountHome(){
+  function GetCookie(){
+    const name="RecentLogins=";
+    
+  }
   const [User, SetUser]=React.useState({});
   return(
     <>
