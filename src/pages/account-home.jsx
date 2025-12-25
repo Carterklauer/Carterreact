@@ -2,7 +2,7 @@ import * as React from "react"
 import {useEffect} from "react"
 export default function AccountHome(){
   function GetCookie(){
-    const name="RecentLogins=";
+    const name="KeepLoggedIn=";
     const decodedCookie = decodeURIComponent(document.cookie);
     const ca=decodedCookie.split(";");
     useEffect(()=>{
