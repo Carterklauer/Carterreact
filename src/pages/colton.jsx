@@ -42,14 +42,22 @@ export default function Colton(){
     <Popup visible={CheckID("pic3")} onClose={false} style={{width:500, height:800}} id="pic3">
       <div className="close-button" onClick={()=>ClosePopup()}>&times;</div>
     </Popup>
-    <img className="landscape" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F71003865_533970900687649_3178975934543822848_n.jpg?v=1602466494940" border={0} alt="Colton Playing baseball 4."/>
+    <img className="landscape" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F71003865_533970900687649_3178975934543822848_n.jpg?v=1602466494940" border={0} alt="Colton Playing baseball 4." onClick={()=>OpenPopup("pic4")}/>
     <Popup visible={CheckID("pic4")} onClose={false} style={{width:500, height:800}} id="pic4">
       <div className="close-button" onClick={()=>ClosePopup()}>&times;</div>
     </Popup>
-    <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F71237568_2540484516038687_3505501347208232960_n.jpg?v=1602466502219" border={0} alt="Colton Playing baseball 5."/>
-    <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F71325705_474807153103911_5717455254639869952_n.jpg?v=1602466506909" border={0} alt="Colton playing Baseball 6."/>
+    <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F71237568_2540484516038687_3505501347208232960_n.jpg?v=1602466502219" border={0} alt="Colton Playing baseball 5." onClick={()=>OpenPopup("pic5")}/>
+    <Popup visible={CheckID("pic5")} onClose={false} style={{width:500, height:800}} id="pic5">
+      <div className="close-button" onClick={()=>ClosePopup()}>&times;</div>
+    </Popup>
+    <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F71325705_474807153103911_5717455254639869952_n.jpg?v=1602466506909" border={0} alt="Colton playing Baseball 6." onClick={()=>OpenPopup("pic6")}/>
+    <Popup visible={CheckID("pic6")} onClose={false} style={{width:500,height:800}} id="pic6">
+      <div className="close-button" onClick={()=>ClosePopup()}>&times</div>
+    </Popup>
     <img className="portrait" src="https://cdn.glitch.com/1760db9d-c13a-4b0a-a542-608419c30c2b%2F72151848_244496169816310_1474778309295341568_n.jpg?v=1602466515582" border={0} alt="colton playing Baseball 7."/>
-    
+    <Popup visible={CheckID("pic7")} onClose={false} style={{width:500, height:800}} id="pic7">
+      <div className="close-button" onClick={()=>ClosePopup()}>&times;</div>
+    </Popup>
     <p className="colton">His pitching speed is 84 m.p.h, and he is 6ft and weighs 225lbs.</p>
     <p className="colton">
       &nbsp; His truck is a 2021 Nissan Titan. Colton
