@@ -18,13 +18,11 @@ import "./styles/styles.css";
 import PageRouter from "./components/router.jsx";
 
 // The component that adds our Meta tags to the page
-import Seo from './components/seo.jsx';
 
 // Home function that is reflected across the site
 export default function Home() {
   return (
     <Router>
-      <Seo />
       <main role="main" className="wrapper">
         <div className="content">
           {/* Router specifies which component to insert here as the main content */}
